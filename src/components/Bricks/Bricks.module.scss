@@ -1,0 +1,50 @@
+.wrapper{
+    width: 100%;
+    background-color: black;
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+    h1{
+        font-size:2vw ;
+        color: #C98C14;
+        font-weight: 700;
+        text-align: center;
+    }
+    .cards{
+        width: 100%;
+        height: 100%;
+        background: #C98C14;
+        border: 2px solid #ECA610;
+        color: #ffff;
+        h3{
+            font-size: 1.2vw;
+            
+        }
+        li{
+            font-size: 0.95vw;
+        }
+        
+    }
+}
+@media screen and (max-width : 900px) {
+    .wrapper{
+        h1{
+            font-size: 8vw !important;
+        }
+        .cards{
+            width: 100%;
+            height: 100%;
+            background: #C98C14;
+            border: 2px solid #ECA610;
+            color: #ffff;
+        h3{
+            font-size: 5vw !important;
+            
+        }
+        li{
+            font-size: 3vw !important;
+        }
+        
+    }
+    
+}
+}

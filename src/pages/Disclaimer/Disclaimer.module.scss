@@ -1,0 +1,15 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+    color: #ffff;
+    .container{
+        margin: 5rem auto;
+        a{
+            color: #ffff;
+            font-weight: bold;
+        }
+    }
+}

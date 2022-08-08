@@ -1,0 +1,64 @@
+.wrapper{
+    width: 100%;
+    min-height: 70vh;
+    background-image: url('../../assets/SL_120319_25700_11 [Converted].png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    .cus_card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    color: #ffff;
+    font-size: 1.2vw;
+    height: 100%;
+}
+@media screen and (max-width : 900px) {
+    .wrapper{
+        width: 100%;
+        min-height: 70vh;
+        background-image: url('../../assets/crop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 8vw !important;
+        }
+        .cus_card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        color: #ffff;
+        font-size: 5vw !important;
+        height: 100% ;
+    }
+    
+}

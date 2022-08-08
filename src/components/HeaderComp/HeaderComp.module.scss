@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+.wrapper{
+   position: relative;
+   background-image: url('../../assets/1_wirf_10 [Converted1].png');
+
+background-repeat: no-repeat;
+background-size: cover;
+   
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .content{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h1{
+            font-size: 5vw;
+            font-family: 'Oswald', sans-serif;
+            background: #6F3FEB;
+background: linear-gradient(to top, #6F3FEB 0%, #7AFFFE 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+            font-weight: 700;
+            
+
+        }
+        h4{
+            font-size: 2.5vw;
+            font-family: 'Oswald', sans-serif;
+            background: #6F3FEB;
+            background: linear-gradient(to top, #6F3FEB 0%, #7AFFFE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .icons{
+            width: 50%;
+         
+            // filter: invert(1);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+}
+@media screen and (max-width : 800px) {
+    .wrapper{
+        position: relative;
+        background-image: url('../../assets/wave (3).svg');
+     
+     background-repeat: no-repeat;
+     background-size: cover;
+        
+         width: 100%;
+         min-height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        h1{
+            font-size: 12vw !important;
+            font-family: 'Prata', serif;
+            color: white;
+
+        }
+        h4{
+            font-size: 8vw !important;
+            font-family: 'Ibarra Real Nova', serif;
+            color: white;
+        }
+        .icons{
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+}

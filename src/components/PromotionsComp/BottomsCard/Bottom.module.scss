@@ -1,0 +1,37 @@
+.wrapper{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    .bg{
+        background-image: url('../../../assets/SL-120319-25700-32 [Converted].png');
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 50vh;
+        filter: brightness(.5);
+    }
+    .cusCard{
+        width: 100% !important;
+        height: 100%;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.2px);
+-webkit-backdrop-filter: blur(10.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: white;
+    }
+  
+ 
+
+}

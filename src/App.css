@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+  overflow-x: hidden;
+}
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.navbarContainer{
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+.privacyLink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.privacyLink a{
+  color: #ffff;
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.cusCard{
+    img{
+        height: 15vw;
+        object-fit: cover;
+
+    }
+}
+@media screen and (max-width : 900px) {
+    .cusCard{
+        img{
+            height: 50vw;
+        }
+    }
+
+    
+}

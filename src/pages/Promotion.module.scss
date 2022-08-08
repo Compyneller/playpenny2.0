@@ -1,0 +1,30 @@
+.wrapper{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    h1{
+        font-size: 2vw;
+        font-weight: 700;
+        color: #ffff;
+    }
+    h5{
+        font-size: 1.2vw;
+        font-weight: 500;
+
+    }
+}
+@media screen and (max-width : 900px) {
+    .wrapper{
+        h1{
+            font-size: 8vw !important;
+        }
+        h5{
+            font-size: 5vw !important;
+
+        }
+    }
+    
+}

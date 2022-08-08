@@ -1,0 +1,50 @@
+.wrapper{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+   
+    text-align: center;
+    
+    h1{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    h5{
+        font-size: 1.2vw;
+        font-weight: 400;
+
+    }
+}
+@media screen and (max-width : 900px) {
+    .content{
+        display: flex;
+        align-items: center !important;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+    
+        text-align: center;
+        
+        h1{
+            font-size: 8vw !important;
+            font-weight: 700;
+        }
+        h5{
+            font-size: 5vw !important;
+            font-weight: 400;
+    
+        }
+    }
+    
+}
