@@ -24,6 +24,7 @@ import PersonalDetails from "./components/PersonalDetails/PersonalDetails";
 import Transactions from "./components/Transactions/Transactions";
 import SignUp from "./pages/SignUp/SignUp";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,7 @@ function App() {
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/how-to-play" element={<HowToPlay />} />
           <Route path="/privacy" element={<Privacy />} />

@@ -1,29 +1,29 @@
 import React, { useState } from "react";
-import "./Login.scss";
+import "../Login/Login.scss";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Alert, Container, Form, InputGroup } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import LoginBg from "./LoginBg";
-import axios from "axios";
+import LoginBg from "../Login/LoginBg";
 
 import { useUserAuth } from "../../context/AuthContext";
-const Login = () => {
+const ForgotPassword = () => {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+
   const [error, setError] = useState("");
+  const [message, setMessage] = useState(false);
   const [loading, setLoading] = useState(false);
-  const { login, googleSignIn } = useUserAuth();
+  const { resetPassword, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       setError("");
       setLoading(true);
-      await login(email, pass);
-      navigate("/protect");
+      const data = await resetPassword(email);
+      setMessage(true);
     } catch (error) {
-      setError("Wrong Credential");
+      setError(error.message);
     }
     setLoading(false);
   };
@@ -52,10 +52,15 @@ const Login = () => {
             />
           </Link>
           <Card.Body>
-            <Card.Title as="h1">Login</Card.Title>
+            <Card.Title as="h1">Forgot Password</Card.Title>
             <br />
             <Card.Text>
               {error && <Alert variant="danger">{error}</Alert>}
+              {message && (
+                <Alert variant="success">
+                  Check your inbox for further instructions
+                </Alert>
+              )}
               <form action="" onSubmit={(e) => handleLogin(e)}>
                 <label htmlFor="">Email</label>
                 <InputGroup className="my-3">
@@ -70,21 +75,8 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </InputGroup>
-                <label htmlFor="">Password</label>
-                <InputGroup className="my-3">
-                  <Form.Control
-                    placeholder="Enter Password"
-                    aria-label="Username"
-                    type="password"
-                    className="text-light"
-                    aria-describedby="basic-addon1"
-                    required
-                    value={pass}
-                    onChange={(e) => setPass(e.target.value)}
-                  />
-                </InputGroup>
                 <Button type="submit" variant="primary">
-                  Login
+                  Reset Password
                 </Button>
                 <br />
                 <br />
@@ -93,8 +85,8 @@ const Login = () => {
                   Here.
                 </Link>
                 <br />
-                <Link className="text-light" to="/forgot-password">
-                  Forgot Password.
+                <Link className="text-light" to="/login">
+                  Login
                 </Link>
               </form>
               <br />
@@ -109,4 +101,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;

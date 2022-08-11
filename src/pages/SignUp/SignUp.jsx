@@ -120,8 +120,7 @@ const SignUp = () => {
                 <div className="row g-2">
                   <div className="col-4">
                     <img
-                      height={100}
-                      width={100}
+                      className="w-100 "
                       src={
                         file === ""
                           ? "https://img.icons8.com/color/344/circled-user-female-skin-type-5--v1.png"
@@ -131,7 +130,7 @@ const SignUp = () => {
                       style={{ objectFit: "cover" }}
                     />
                   </div>
-                  <div className="col-8">
+                  <div className="col-8 d-flex align-items-center">
                     <Form.Group controlId="formFile" className="mb-3">
                       <Form.Label>Upload Profile Picture</Form.Label>
                       <Form.Control
