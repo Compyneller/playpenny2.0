@@ -89,7 +89,7 @@ const Login = () => {
                 <br />
                 <br />
                 New user signup{" "}
-                <Link to="/signup" style={{ fontWeight: "bold" }}>
+                <Link to="/otp" style={{ fontWeight: "bold" }}>
                   Here.
                 </Link>
                 <br />

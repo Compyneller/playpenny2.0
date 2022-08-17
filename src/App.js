@@ -25,6 +25,7 @@ import Transactions from "./components/Transactions/Transactions";
 import SignUp from "./pages/SignUp/SignUp";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import OTP from "./pages/OTP/OTP";
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,8 @@ function App() {
           <Route path="/promotion" element={<Promotion />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/otp" element={<OTP />} />
+
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/aboutus" element={<AboutUs />} />
