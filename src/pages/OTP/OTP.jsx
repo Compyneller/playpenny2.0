@@ -31,8 +31,7 @@ const OTP = () => {
       );
       setDisable(true);
       setModalShow(true);
-      localStorage.setItem("userName", name);
-      localStorage.setItem("userMobile", mobile);
+      console.log(data);
     } catch (error) {
       setErrorMsg(error);
     }
