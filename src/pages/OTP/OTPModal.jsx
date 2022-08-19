@@ -17,7 +17,7 @@ const OTPModal = (props) => {
         otp: otp,
       };
       const { data } = await axios.post(
-        "http://34.207.41.229:4100/playpenny/verifyCode",
+        "https://www.inrdweb.com:4100/playpenny/verifyCode",
         body
       );
       if (data.success) {

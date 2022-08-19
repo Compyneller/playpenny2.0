@@ -26,7 +26,7 @@ const OTP = () => {
         country_code: "91",
       };
       const { data } = await axios.post(
-        "http://34.207.41.229:4100/playpenny/sendCode",
+        "https://www.inrdweb.com:4100/playpenny/sendCode",
         body
       );
       setDisable(true);
