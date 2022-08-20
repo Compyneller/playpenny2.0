@@ -12,7 +12,7 @@ const OTPModal = (props) => {
     e.preventDefault();
     try {
       const body = {
-        mobile_no: "8299016600",
+        mobile_no: localStorage.getItem("userMobileNumber"),
         country_code: "91",
         otp: otp,
       };

@@ -30,8 +30,8 @@ const OTP = () => {
         body
       );
       setDisable(true);
+      localStorage.setItem("userMobileNumber", mobile);
       setModalShow(true);
-      console.log(data);
     } catch (error) {
       setErrorMsg(error);
     }
