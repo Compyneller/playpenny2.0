@@ -45,7 +45,7 @@ const ProtectedNavBar = ({ bg }) => {
                   <Nav.Link href="/">Lobby</Nav.Link>
                   <Nav.Link href="/promotion">My Account</Nav.Link>
                   <Nav.Link href="/how-to-play">Bring a friend</Nav.Link>
-                  <Nav.Link href="/leaderboard">Leader board</Nav.Link>
+                  {/* <Nav.Link href="/leaderboard">Lecader board</Nav.Link> */}
                   <Nav.Link href="/leaderboard">PlayPenny Rewards</Nav.Link>
                   <Nav.Link href="/leaderboard">Promotions Rewards</Nav.Link>
                   <Nav.Link href="/login">
