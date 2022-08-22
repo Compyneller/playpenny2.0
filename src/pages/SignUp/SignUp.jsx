@@ -6,7 +6,6 @@ import {
   Container,
   Form,
   InputGroup,
-  Row,
 } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../Login/Login.scss";
@@ -73,7 +72,7 @@ const SignUp = () => {
     const value = e.target.value;
     setData({ ...data, [id]: value });
   };
-  console.log(data);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (data.password !== data.confirmpassword) {

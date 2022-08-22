@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import logo1 from "../../assets/logo1.png";
+import logo2 from "../../assets/logo2.png";
 const NavBarComp = ({ bg }) => {
   return (
     <>
@@ -19,7 +21,17 @@ const NavBarComp = ({ bg }) => {
           }}
         >
           <Container>
-            <Navbar.Brand href="/">PlayPenny</Navbar.Brand>
+            <Navbar.Brand href="/">
+              {" "}
+              <div className="d-flex align-items-center">
+                <img src={logo1} alt="" style={{ height: "6vh" }} />
+                <img
+                  src={logo2}
+                  alt=""
+                  style={{ height: "4vh", filter: "invert(1)" }}
+                />
+              </div>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,7 +40,10 @@ const NavBarComp = ({ bg }) => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  PlayPenny
+                  <div className="d-flex align-items-center">
+                    <img src={logo1} alt="" style={{ height: "6vh" }} />
+                    <img src={logo2} alt="" style={{ height: "4vh" }} />
+                  </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
