@@ -5,26 +5,10 @@ const Other = () => {
   return (
     <Container style={{ padding: "3rem 1rem" }}>
       <Row className="g-3">
-        <Col sm={12} lg={8}>
+        <Col sm={12} lg={6}>
           <h1>Other Promotions</h1>
           <Row className="g-3">
-            <Col sm={12} lg={6}>
-              <Card
-                className={style.cusCard}
-                style={{ width: "100%", height: "100%" }}
-              >
-                <Card.Img
-                  variant="top"
-                  src="https://img.freepik.com/free-vector/mega-sale-offers-banner-template_1017-31299.jpg?w=1380&t=st=1658900956~exp=1658901556~hmac=c806fa4458b27c3988fb52957b197e97bcd994176aa54984da8ba7a2f64836ad"
-                />
-                <Card.Body>
-                  <Card.Title>Social Sharks</Card.Title>
-                  <Card.Text>Every Month 28th 3:30 PM</Card.Text>
-                  <Button variant="info">Details</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm={12} lg={6}>
+            <Col sm={12} lg={12}>
               <Card
                 className={style.cusCard}
                 style={{ width: "100%", height: "100%" }}
@@ -42,7 +26,7 @@ const Other = () => {
             </Col>
           </Row>
         </Col>
-        <Col sm={12} lg={4}>
+        <Col sm={12} lg={6}>
           <h1>Upcoming</h1>
           <Card className={style.cusCard} style={{ width: "100%" }}>
             <Card.Img
