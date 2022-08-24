@@ -13,7 +13,7 @@ const NoDownloads = () => {
           <h5>Play Free Rummy Tournaments - Win Cash!</h5>
           <br />
           <Button variant="info" onClick={() => navigate("/otp")}>
-            JOIN PAYPENNY
+            JOIN PLAYPENNY
           </Button>
         </Card.Body>
       </Card>
